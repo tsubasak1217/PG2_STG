@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{1a1fa7ae-9330-44fa-9650-dc6789d95ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{fe5ded87-cc56-4a1a-9d4b-58b272a73f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Camera">
+      <UniqueIdentifier>{f74e117e-1a8c-4bf0-b804-e9578f6add8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneManager">
+      <UniqueIdentifier>{f61a6620-9e08-43f7-b3c8-1c1d20687545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes">
+      <UniqueIdentifier>{29c0d45c-6270-4dd7-8b31-6a0b8874c3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\1_Title">
+      <UniqueIdentifier>{5f5a79fb-0ab4-4392-9bac-3538ad0be583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\1_Title\Object">
+      <UniqueIdentifier>{5e35057b-a80d-42de-8269-92c6f70c0fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\2_Select">
+      <UniqueIdentifier>{ba6bb1ac-62a2-4f34-af68-ab943fe4f2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\3_Game">
+      <UniqueIdentifier>{646cfe2f-b7b0-46fa-85be-3de5e1397e63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\4_Clear">
+      <UniqueIdentifier>{3ddfe370-45ae-4fb7-8168-495d713df27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Matrix">
+      <UniqueIdentifier>{2565304b-ecd7-49c8-a28e-126729121ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Vector">
+      <UniqueIdentifier>{79cf3d38-745e-4121-a809-9bf4822caa56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{30d35989-df74-403c-b0a5-a495198b9c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameManager">
+      <UniqueIdentifier>{ce546010-5053-402a-a4a3-97c2da57deb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Transition">
+      <UniqueIdentifier>{bb746059-1ff6-4f4e-99cf-6edafddc460d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\SaveData">
+      <UniqueIdentifier>{3b210739-34e6-48d9-960d-bf3b4ecf3a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\3_Game\Object">
+      <UniqueIdentifier>{08a3c68f-6129-4dc1-870c-74089fbad078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\3_Game\Stage">
+      <UniqueIdentifier>{4e6411d0-a97f-47b4-b69c-5afa6b99451c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SuperClass">
+      <UniqueIdentifier>{710a7f2b-f2db-45b4-9eda-e586ad00c939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{3c63f913-7257-42b8-956d-ad9daae94798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Texture">
+      <UniqueIdentifier>{3971e18e-7ca2-46a3-947f-75f84a3364a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Audio">
+      <UniqueIdentifier>{626f1a62-5232-48d8-aa13-21e211def2f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Files">
+      <UniqueIdentifier>{533b37cd-ee65-440e-88c9-2b59413eaf1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{7fe1761e-13b7-46f0-aa1a-d31969b74722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Matrix\Math">
+      <UniqueIdentifier>{c87020e7-5d76-49b9-b604-9bd9c927108c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scenes\3_Game\Collision">
+      <UniqueIdentifier>{1328f237-0813-4472-9105-80a408b16673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="KamataEngine\Source">
+      <UniqueIdentifier>{d966e9f8-e880-44ae-8586-a08515e4cffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine\Include">
+      <UniqueIdentifier>{4aae4e40-94f7-4d32-9a91-c0c37a2edf0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine\Adapter">
+      <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\base\TextureManager.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\scene\GameScene.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\base\WinApp.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
+      <Filter>KamataEngine\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\2_Select\Scene_Select.cpp">
+      <Filter>Scene\Scenes\2_Select</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\3_Game\Scene_Game.cpp">
+      <Filter>Scene\Scenes\3_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\4_Clear\Scene_CLear.cpp">
+      <Filter>Scene\Scenes\4_Clear</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Transition\Scene_Transition.cpp">
+      <Filter>Scene\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager\Scene.cpp">
+      <Filter>Scene\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager\SceneManager.cpp">
+      <Filter>Scene\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\MyAudioManager\MyAudioManager.cpp">
+      <Filter>Resources\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\MyFileManager\MyFileManager.cpp">
+      <Filter>Resources\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\MyTextureManager\MyTextureManager.cpp">
+      <Filter>Resources\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Camera\Camera.cpp">
+      <Filter>Lib\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Math\Easing.cpp">
+      <Filter>Lib\Matrix\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\Math\MyFunc.cpp">
+      <Filter>Lib\Matrix\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\InputKey.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\GameManager.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\SaveData\SaveData.cpp">
+      <Filter>Config\SaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\1_Title\Scene_Title.cpp">
+      <Filter>Scene\Scenes\1_Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\3_Game\Object\Player.cpp">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SUPERCLASS\Object.cpp">
+      <Filter>SuperClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\3_Game\Object\Bullet.cpp">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\3_Game\Object\Enemy.cpp">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\3_Game\Object\EnemyManager.cpp">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\3_Game\Stage\Stage.cpp">
+      <Filter>Scene\Scenes\3_Game\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scenes\3_Game\Collision\CollisionManager.cpp">
+      <Filter>Scene\Scenes\3_Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CONFIG\Environment.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\2d\DebugText.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\scene\GameScene.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\input\Input.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\Model.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\SafeDelete.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\2d\Sprite.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\TextureManager.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\ViewProjection.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\WinApp.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\WorldTransform.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\Adapter\Novice.h">
+      <Filter>KamataEngine\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\CircleShadow.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\DebugCamera.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\DirectionalLight.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\LightGroup.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\Material.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\Mesh.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\PointLight.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\SpotLight.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\2_Select\Scene_Select.h">
+      <Filter>Scene\Scenes\2_Select</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\3_Game\Scene_Game.h">
+      <Filter>Scene\Scenes\3_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\4_Clear\Scene_CLear.h">
+      <Filter>Scene\Scenes\4_Clear</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Transition\Scene_Transition.h">
+      <Filter>Scene\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager\Scene.h">
+      <Filter>Scene\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager\SceneManager.h">
+      <Filter>Scene\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\MyAudioManager\MyAudioManager.h">
+      <Filter>Resources\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\MyFileManager\MyFileManager.h">
+      <Filter>Resources\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\MyTextureManager\MyTextureManager.h">
+      <Filter>Resources\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Camera\Camera.h">
+      <Filter>Lib\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Math\Easing.h">
+      <Filter>Lib\Matrix\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Math\MyFunc.h">
+      <Filter>Lib\Matrix\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Matrix\MatrixNxN.h">
+      <Filter>Lib\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\Vector\VectorN.h">
+      <Filter>Lib\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\InputKey.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\GameManager.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Environment.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\SaveData\SaveData.h">
+      <Filter>Config\SaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\1_Title\Scene_Title.h">
+      <Filter>Scene\Scenes\1_Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\3_Game\Object\Player.h">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SUPERCLASS\Object.h">
+      <Filter>SuperClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\3_Game\Object\Bullet.h">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\3_Game\Object\Enemy.h">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\3_Game\Object\EnemyManager.h">
+      <Filter>Scene\Scenes\3_Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\3_Game\Stage\Stage.h">
+      <Filter>Scene\Scenes\3_Game\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scenes\3_Game\Collision\CollisionManager.h">
+      <Filter>Scene\Scenes\3_Game\Collision</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
