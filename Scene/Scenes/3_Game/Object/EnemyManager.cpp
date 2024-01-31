@@ -9,6 +9,7 @@ EnemyManager::~EnemyManager() {
 }
 
 void EnemyManager::Init(Scene_Game* sceneGame_ptr) {
+	chapter_ = 1;
 	loadOrder_ = true;
 	sceneGame_ptr_ = sceneGame_ptr;
 	enemy_.clear();
@@ -18,18 +19,31 @@ void EnemyManager::Update() {
 
 	LoadEnemy();
 
-	switch (sceneGame_ptr_->GetChapter()) {
+	for (int i = 0; i < enemy_.size(); i++) {
+		enemy_[i]->Update();
+	}
+
+	switch (chapter_) {
 
 	case 1:
-		Update_Chapter1();
+		if (enemy_.size() <= 0) {
+			chapter_ = 2;
+			loadOrder_ = true;
+		}
+
 		break;
 
 	case 2:
-		Update_Chapter2();
+		if (enemy_.size() <= 0) {
+			chapter_ = 3;
+			loadOrder_ = true;
+		}
 		break;
 
 	case 3:
-		Update_Chapter3();
+		if (enemy_.size() <= 0) {
+			sceneGame_ptr_->SetIsChangeScene(true);
+		}
 		break;
 
 	default:
@@ -50,36 +64,23 @@ void EnemyManager::Draw() {
 void EnemyManager::Fin() {
 }
 
-void EnemyManager::Update_Chapter1() {
-
-	for (int i = 0; i < enemy_.size(); i++) {
-		enemy_[i]->Update();
-	}
-}
-
-void EnemyManager::Update_Chapter2() {
-}
-
-void EnemyManager::Update_Chapter3() {
-}
 
 void EnemyManager::LoadEnemy() {
 
 	if (!loadOrder_) { return; }
 	enemy_.clear();
 
-	switch (sceneGame_ptr_->GetChapter()) {
+	switch (chapter_) {
 	case 1:
-		for (int i = 0; i < 16; i++) { enemy_.push_back(new Enemy());}
-
+		for (int i = 0; i < 4; i++) { enemy_.push_back(new Enemy());}
 		break;
 
 	case 2:
-		for (int i = 0; i < 32; i++) { enemy_.push_back(new Enemy()); }
+		for (int i = 0; i < 8; i++) { enemy_.push_back(new Enemy()); }
 		break;
 
 	case 3:
-		for (int i = 0; i < 64; i++) { enemy_.push_back(new Enemy()); }
+		for (int i = 0; i < 16; i++) { enemy_.push_back(new Enemy()); }
 		break;
 
 	default:

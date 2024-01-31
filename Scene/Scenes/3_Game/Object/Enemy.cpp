@@ -7,6 +7,8 @@ Enemy::Enemy() {
 	scale_ = { 1.0f,1.0f };
 	theta_ = 0.0f;
 	isAlive_ = true;
+	timeCount_ = 0;
+	alpha_ = 0;
 
 	localVertex_[LT] = { -size_.x * 0.5f,  size_.y * 0.5f };
 	localVertex_[RT] = { size_.x * 0.5f,  size_.y * 0.5f };
@@ -37,6 +39,9 @@ void Enemy::Init() {
 
 void Enemy::Update() {
 	MakeMatrix();
+	timeCount_++;
+	alpha_ = int(255.0f * (timeCount_ / 60.0f));
+	alpha_ = std::clamp(alpha_, 0, 255);
 
 	pos_ += direction_ * speed_;
 
@@ -90,10 +95,8 @@ void Enemy::Draw() {
 			0, 0,
 			1, 1,
 			MyTextureManager::texture_[0],
-			0xff0000ff
+			0xff000000 + alpha_
 		);
-
-
 	}
 }
 

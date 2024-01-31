@@ -9,4 +9,5 @@ MyTextureManager::MyTextureManager() {
 	texture_[2] = Novice::LoadTexture("./Resources/Images/ellipse.png");
 	texture_[3] = Novice::LoadTexture("./Resources/Images/title.png");
 	texture_[4] = Novice::LoadTexture("./Resources/Images/CLEAR.png");
+	texture_[5] = Novice::LoadTexture("./Resources/Images/gameOver.png");
 }

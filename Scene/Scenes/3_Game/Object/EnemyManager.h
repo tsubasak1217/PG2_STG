@@ -16,11 +16,9 @@ private:
 	Scene_Game* sceneGame_ptr_;
 	std::vector<Enemy*> enemy_;
 	bool loadOrder_;
+	int chapter_;
 
 private:
-	void Update_Chapter1();
-	void Update_Chapter2();
-	void Update_Chapter3();
 
 	void LoadEnemy();
 	void EraseEnemy();

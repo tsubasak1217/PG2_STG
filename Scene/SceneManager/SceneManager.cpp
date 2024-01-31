@@ -41,7 +41,7 @@ void SceneManager::Update() {
 					break;
 
 				case GAME:
-					scene_ = new Scene_Clear();
+					scene_ = new Scene_Clear(scene_->GetIsGameOver());
 					break;
 
 				case CLEAR:

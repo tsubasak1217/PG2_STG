@@ -23,11 +23,10 @@ void Scene_Game::Init() {
 
 	sceneNum_ = GAME;
 
-	chapter_ = 1;
 	stage = new Stage();
 	player_ = new Player();
 	em_ = new EnemyManager(this);
-	cm_ = new CollisionManager(player_, em_);
+	cm_ = new CollisionManager(player_, em_,this);
 }
 
 void Scene_Game::Update() {
@@ -40,7 +39,7 @@ void Scene_Game::Update() {
 
 	cm_->Update();
 
-	if (em_->GetEnemy().size() <= 0) {
+	if (isGameOver_) {
 		isChangeScene_ = true;
 		return;
 	}

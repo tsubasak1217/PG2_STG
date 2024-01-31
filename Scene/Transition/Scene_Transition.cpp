@@ -13,6 +13,7 @@ void Scene_Transition::Init() {
 	inFrame_ = 30;
 	outFrame_ = 30;
 	isReturn_ = false;
+	alpha_ = 0;
 }
 
 void Scene_Transition::Update() {

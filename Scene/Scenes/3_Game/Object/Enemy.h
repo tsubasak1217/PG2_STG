@@ -30,6 +30,9 @@ private:
 	Vec2 direction_;
 	float speed_;
 
+	int timeCount_;
+	int alpha_;
+
 private:
 	void MakeMatrix();
 

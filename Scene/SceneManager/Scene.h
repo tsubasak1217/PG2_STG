@@ -18,10 +18,14 @@ public:
 protected:
 	int sceneNum_;
 	bool isChangeScene_;
+	bool isGameOver_;
 
 public:
 	int GetSceneNum()const { return sceneNum_; }
 	bool GetIsChangeScene()const { return isChangeScene_; }
+	void SetIsChangeScene(bool flag) { isChangeScene_ = flag; }
+	bool GetIsGameOver()const { return isGameOver_; }
+	void SetIsGameOver(bool flag) { isGameOver_ = flag; }
 };
 
 enum SCENE {

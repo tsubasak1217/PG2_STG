@@ -1,10 +1,12 @@
 ﻿#include "CollisionManager.h"
 #include "Player.h"
 #include "EnemyManager.h"
+#include "Scene_Game.h"
 
-CollisionManager::CollisionManager(Player* playerPtr, EnemyManager* emPtr) {
+CollisionManager::CollisionManager(Player* playerPtr, EnemyManager* emPtr,Scene_Game* p_scene) {
 	player_ = playerPtr;
 	em_ = emPtr;
+	scene_GamePtr = p_scene;
 }
 
 CollisionManager::~CollisionManager() {
@@ -40,7 +42,7 @@ void CollisionManager::Update() {
 
 			// ゲームオーバー
 			if (distance < player_->GetSize().x * 0.5f + em_->GetEnemy()[i]->GetSize().x * 0.5f) {
-
+				scene_GamePtr->SetIsGameOver(true);
 			}
 		}
 	}

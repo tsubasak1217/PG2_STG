@@ -6,8 +6,9 @@
 #include "Scene_Transition.h"
 #include "SceneManager.h"
 
-Scene_Clear::Scene_Clear() {
+Scene_Clear::Scene_Clear(bool isGameOver) {
 	sceneNum_ = CLEAR;
+	isGameOver_ = isGameOver;
 }
 
 Scene_Clear::~Scene_Clear() {
@@ -33,6 +34,18 @@ void Scene_Clear::Draw() {
 		MyTextureManager::texture_[4],
 		0xffffffff
 	);
+
+	if (isGameOver_) {
+		Novice::DrawQuad(
+			int(0), int(0),
+			int(kWindowSizeX), int(0),
+			int(0), int(kWindowSizeY),
+			int(kWindowSizeX), int(kWindowSizeY),
+			0, 0, kWindowSizeX, kWindowSizeY,
+			MyTextureManager::texture_[5],
+			0xffffffff
+		);
+	}
 
 #ifdef _DEBUG
 	Novice::ScreenPrintf(20, 20, "scene: Clear");
